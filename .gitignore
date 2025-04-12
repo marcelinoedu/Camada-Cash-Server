@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+
+
+# macOS
+.DS_Store
+
+# Editor e sistema operacional
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Logs e databases
+logs/
+*.log
+*.sqlite3
+*.db
+
+# Dependências do Python
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Arquivos de cache
+.cache/
+.pytest_cache/
+.tox/
+.coverage
+coverage.xml
+*.cover
+*.pyc
+
+# Configuração da Vercel
+.vercel/
+.vercel/cache/
+
+# Arquivos gerados pelo Vercel
+node_modules/
+package-lock.json
+yarn.lock
+
+
+.env
+vercel

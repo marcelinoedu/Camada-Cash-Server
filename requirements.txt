@@ -1,0 +1,15 @@
+fastapi>=0.100.0
+uvicorn[standard]
+pydantic>=2.0
+pydantic-core>=2.0
+pydantic-settings>=2.0
+typing-extensions
+annotated-types
+jinja2
+anyio
+sniffio
+h11
+click
+bcrypt
+pyjwt
+supabase
