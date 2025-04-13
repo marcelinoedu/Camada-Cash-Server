@@ -7,6 +7,13 @@ from services.token_service import revoke_token
 router = APIRouter()
 
 
+@router.get("/auth_check")
+def auth_check(request: Request):
+    if not hasattr(request.state, "user"):
+        raise HTTPException(status_code=401, detail="Token inválido")
+    return {"message": "Token válido", "user": request.state.user}
+
+
 @router.post("/login")
 def login(login_request: LoginRequest):
     login_data = login_user(email=login_request.email,
